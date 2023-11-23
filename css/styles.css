@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #pizzaForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #deliveryAddressContainer {
+    display: none; /* Hides the delivery address container */
+  }
+  
+  #userInputs {
+    margin-top: 20px;
+  }
+  
+  #userInputs p {
+    font-size: 14px;
+  }
+  
+  #pizzaOutput {
+    margin-top: 20px;
+  }
+  
+  #pizzaOutput h2 {
+    color: #4caf50;
+  }
+
+#cardDetailsContainer {
+    display: none; /* Hides the card details container */
+  }
+    

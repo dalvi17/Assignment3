@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>The Pizza Maker</title>
+</head>
+<body>
+
+  <div id="pizzaForm">
+    <h1>The Pizza Maker</h1>
+
+    <p id="studentInfo"></p>
+
+    <form id="pizzaOrderForm">
+      <label for="pizzaSize">Pizza Size:</label>
+      <select id="pizzaSize" name="pizzaSize">
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="Extra Large">Extra Large</option>
+        <option value="Party Size">Party Pizza</option>
+      </select>
+
+      <label for="pizzaToppings">Toppings:</label>
+      <input type="text" id="pizzaToppings" name="pizzaToppings" placeholder="Enter toppings">
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+
+      <label for="deliveryOption">Delivery Option:</label>
+      <select id="deliveryOption" name="deliveryOption">
+        <option value="pickup">Pickup</option>
+        <option value="delivery">Delivery</option>
+      </select>
+
+      <div id="deliveryAddressContainer">
+        <label for="deliveryAddress">Delivery Address:</label>
+        <textarea id="deliveryAddress" name="deliveryAddress" placeholder="Enter your delivery address"></textarea>
+      </div>
+
+      <label for="paymentOption">Payment Option:</label>
+      <select id="paymentOption" name="paymentOption">
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+      </select>
+
+      <div id="cardDetailsContainer">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number">
+    
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY">
+    
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+      </div>
+
+      <button type="button" id="orderBtn">Order</button>
+    </form>
+
+    <div id="userInputs">
+      <h2>User Inputs:</h2>
+      <p id="sizeOutput"></p>
+      <p id="toppingsOutput"></p>
+      <p id="phoneOutput"></p>
+      <p id="addressOutput"></p>
+      <p id="deliveryOutput"></p>
+      <p id="paymentOutput"></p>
+    </div>
+
+    <div id="pizzaOutput">
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
